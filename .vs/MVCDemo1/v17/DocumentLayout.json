@@ -1,0 +1,229 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\views\\user\\userform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:views\\user\\userform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\views\\order\\orderform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:views\\order\\orderform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|d:\\pinal_college\\sem-5\\dot net\\coffeemanagementsystem\\mvcdemo1\\views\\orderdetail\\orderdetailform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09F89DB7-49BB-4C0C-8B9C-96D2093C43B0}|MVCDemo1.csproj|solutionrelative:views\\orderdetail\\orderdetailform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserForm.cshtml",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\User\\UserForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\UserForm.cshtml",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\User\\UserForm.cshtml",
+              "RelativeToolTip": "Views\\User\\UserForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T12:39:20.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T07:17:36.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T06:55:18.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "Views\\User\\Login.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEcAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T12:55:23.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customer\\Index.cshtml",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\Customer\\Index.cshtml",
+              "RelativeToolTip": "Views\\Customer\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T12:54:57.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:46:34.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerModel.cs",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Models\\CustomerModel.cs",
+              "RelativeDocumentMoniker": "Models\\CustomerModel.cs",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Models\\CustomerModel.cs",
+              "RelativeToolTip": "Models\\CustomerModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:42:28.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductModel.cs",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Models\\ProductModel.cs",
+              "RelativeDocumentMoniker": "Models\\ProductModel.cs",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Models\\ProductModel.cs",
+              "RelativeToolTip": "Models\\ProductModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:32:54.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:15:02.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BillController.cs",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\BillController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BillController.cs",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\BillController.cs",
+              "RelativeToolTip": "Controllers\\BillController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:08:24.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderDetailController.cs",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\OrderDetailController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderDetailController.cs",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Controllers\\OrderDetailController.cs",
+              "RelativeToolTip": "Controllers\\OrderDetailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T11:20:49.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderForm.cshtml",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\Order\\OrderForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\OrderForm.cshtml",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\Order\\OrderForm.cshtml",
+              "RelativeToolTip": "Views\\Order\\OrderForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T11:19:46.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderDetailForm.cshtml",
+              "DocumentMoniker": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\OrderDetail\\OrderDetailForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\OrderDetail\\OrderDetailForm.cshtml",
+              "ToolTip": "D:\\Pinal_College\\Sem-5\\Dot net\\CoffeeManagementSystem\\MVCDemo1\\Views\\OrderDetail\\OrderDetailForm.cshtml",
+              "RelativeToolTip": "Views\\OrderDetail\\OrderDetailForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T11:18:44.891Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

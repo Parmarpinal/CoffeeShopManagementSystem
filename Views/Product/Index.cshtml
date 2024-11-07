@@ -1,0 +1,123 @@
+﻿@model DataTable;
+@using System.Data;
+@using System.Globalization
+
+<main id="main" class="main">
+    
+    <div class="d-flex mb-3">
+        <a asp-controller="Home" asp-action="Index" class="me-2 fs-2 text-dark"><i class="bi bi-arrow-left-short"></i></a>
+        <div class="me-auto fw-bold p-2 fs-4">Product Table</div>
+        <div class="p-2">
+            <a class="btn btn-success mb-3" asp-controller="Product" asp-action="ProductForm">Add Product</a>
+        </div>
+        <div class="p-2">
+            <a class="btn btn-primary mb-3" asp-controller="Product" asp-action="ExportToExcel">Export to excel</a>
+        </div>
+    </div>
+
+    @if(TempData["SuccessMsg"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMsg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-level="close"></button>
+        </div>
+    }
+
+    <h6 class="text-danger">
+        @TempData["ErrorMessage"]</h6>
+    <table class="table table-striped">
+        <thead>
+            <tr class="table-primary">
+                <th class="m-2">Product ID</th>
+                <th class="m-2">Product Name</th>
+                <th class="m-2">Product Code</th>
+                <th class="m-2">Product Price</th>
+                <th class="m-2">Description</th>
+                <th class="m-2">User Name</th>
+                <th class="m-2"></th>
+                <th class="m-2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(DataRow dataRow in Model.Rows)
+            {
+                <tr>
+                    <td class="m-2">@dataRow["ProductID"]</td>
+                    <td class="m-2">@dataRow["ProductName"]</td>
+                    <td class="m-2">@dataRow["ProductCode"]</td>
+                    <td class="m-2">@string.Format(new CultureInfo("hi-IN"), "{0:N0}", dataRow["ProductPrice"])</td>
+                    <td class="m-2">@dataRow["Description"]</td>
+                    <td class="m-2">@dataRow["UserName"]</td>
+                    <td class="m-2"><a class="btn btn-warning" asp-controller="Product" asp-action="ProductForm" asp-route-ProductID="@dataRow["ProductID"]">Edit</a></td>
+                    <td class="m-2">
+                        <form method="post" asp-controller="Product" asp-action="ProductDelete">
+                            <input type="hidden" name="ProductID" value="@dataRow["ProductID"]" />
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                    onclick="setProductId('@dataRow["ProductID"]')">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                  
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirm Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this product?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form method="post" asp-controller="Product" asp-action="ProductDelete" id="deleteForm">
+                    <input type="hidden" name="ProductID" id="deleteProductId" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function setProductId(productId) {
+        document.getElementById('deleteProductId').value = productId;
+    }
+</script>
+
+@* <script>
+    function confirmDelete(productId) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // If confirmed, submit the form via POST
+                const form = document.createElement('form');
+                form.method = 'post';
+                form.action = '/Product/ProductDelete';
+
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'ProductID';
+                input.value = productId;
+                form.appendChild(input);
+
+                document.body.appendChild(form);
+                form.submit();
+            }
+        });
+    }
+</script> *@

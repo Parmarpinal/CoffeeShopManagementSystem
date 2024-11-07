@@ -1,0 +1,90 @@
+﻿@model DataTable;
+@using System.Data;
+
+<main id="main" class="main">
+
+    <div class="d-flex mb-3">
+        <a asp-controller="Home" asp-action="Index" class="me-2 fs-2 text-dark"><i class="bi bi-arrow-left-short"></i></a>
+        <div class="me-auto fw-bold p-2 fs-4">User Table</div>
+        <div class="p-2">
+            <a class="btn btn-success mb-3" asp-controller="User" asp-action="UserForm">Add User</a>
+        </div>
+    </div>
+    @if (TempData["SuccessMsg"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMsg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-level="close"></button>
+        </div>
+    }
+
+    <h6 class="text-danger">
+        @TempData["ErrorMessage"]
+    </h6>
+    <table class="table table-striped">
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">User ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Mobile No</th>
+                <th scope="col">Address</th>
+                <th scope="col">IsActive</th>
+                <th class="m-2"></th>
+                <th class="m-2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(DataRow dataRow in Model.Rows)
+            {              
+            <tr>
+                <th scope="row">@dataRow["UserID"]</th>
+                <td>@dataRow["UserName"]</td>
+                <td>@dataRow["Email"]</td>
+                    <td>@dataRow["Password"].ToString().Substring(0, 2)<span>****</span>@dataRow["Password"].ToString().Substring(@dataRow["Password"].ToString().Length-1)</td>
+                <td>@dataRow["MobileNo"]</td>
+                <td>@dataRow["Address"]</td>
+                <td>@dataRow["IsActive"]</td>
+                    <td class="m-2"><a class="btn btn-warning" asp-controller="User" asp-action="UserForm" asp-route-UserID="@dataRow["UserID"]">Edit</a></td>
+                    <td class="m-2">
+                        <form method="post" asp-controller="User" asp-action="UserDelete">
+                            <input type="hidden" name="UserID" value="@dataRow["UserID"]" />
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                    onclick="setProductId('@dataRow["UserID"]')">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</main>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirm Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this product?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form method="post" asp-controller="User" asp-action="UserDelete" id="deleteForm">
+                    <input type="hidden" name="UserID" id="deleteProductId" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function setProductId(productId) {
+        document.getElementById('deleteProductId').value = productId;
+    }
+</script>

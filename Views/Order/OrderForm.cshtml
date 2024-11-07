@@ -1,0 +1,101 @@
+﻿@model OrderModel
+
+<main id="main" class="main">
+    <a asp-controller="Home" asp-action="Index" class="me-2 fs-2 text-dark"><i class="bi bi-arrow-left-short"></i></a>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Add Order</h5>
+
+            <form>
+                @Html.HiddenFor(m => m.OrderID)
+                <div class="row mb-3">
+                    <label asp-for="OrderDate" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Order date</label>
+                    <div class="col-sm-10">
+                        @* <input asp-for="OrderDate" class="form-control" type="datetime-local" id="datetimeField" name="datetime"> *@
+                        <input asp-for="OrderDate" type="date" class="form-control">
+                        <span asp-validation-for="OrderDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="OrderNumber" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Order Number</label>
+                    <div class="col-sm-10">
+                        <input asp-for="OrderNumber" type="text" class="form-control">
+                        <span asp-validation-for="OrderNumber" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="CustomerID" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Customer Name</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" asp-for="CustomerID">
+                            <option value="">Select Customer</option>
+                            @foreach (var customer in ViewBag.CustomerList)
+                            {
+                                <option value="@customer.CustomerID">@customer.CustomerName</option>
+                            }
+                        </select>
+                        <span asp-validation-for="CustomerID" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="PaymentMode" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Payment Mode</label>
+                    <div class="col-sm-10">
+                        <input asp-for="PaymentMode" class="form-control" type="text">
+                        <span asp-validation-for="PaymentMode" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="TotalAmount" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Total amount</label>
+                    <div class="col-sm-10">
+                        <input asp-for="TotalAmount" class="form-control" type="number">
+                        <span asp-validation-for="TotalAmount" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="ShippingAddress" class="col-sm-2 col-form-label"><span class="text-danger">*</span>Shipping address</label>
+                    <div class="col-sm-10">
+                        <textarea asp-for="ShippingAddress" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label asp-for="UserID" class="col-sm-2 col-form-label"><span class="text-danger">*</span>User Name</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" asp-for="UserID" asp-items="@(new SelectList(ViewBag.UserList, "UserID", "UserName"))">
+                            <option value="">Select User</option>
+                        </select>
+                        <span asp-validation-for="UserID" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-2">
+                        <input class="btn btn-success" asp-controller="Order" asp-action="onOrderSave" type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+}
+
+@* <script>
+    // Get the current date and time
+    let now = new Date();
+
+    // Format date and time to 'YYYY-MM-DDTHH:MM' for datetime-local input
+    let year = now.getFullYear();
+    let month = ('0' + (now.getMonth() + 1)).slice(-2); // Months are zero-based, so add 1
+    let day = ('0' + now.getDate()).slice(-2);
+    let hours = ('0' + now.getHours()).slice(-2);
+    let minutes = ('0' + now.getMinutes()).slice(-2);
+
+    let formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}:00.000`;
+
+    // Set the default value for the datetime-local input
+    document.getElementById('datetimeField').value = formattedDateTime;
+</script> *@

@@ -1,0 +1,94 @@
+﻿@using System.Data
+@model DataTable
+@using System.Globalization
+
+<main id="main" class="main">
+
+    <div class="d-flex mb-3">
+        <a asp-controller="Home" asp-action="Index" class="me-2 fs-2 text-dark"><i class="bi bi-arrow-left-short"></i></a>
+        <div class="me-auto fw-bold p-2 fs-4">Order Table</div>
+        <div class="p-2">
+            <a class="btn btn-success mb-3" asp-controller="Order" asp-action="OrderForm">Add Order</a>
+        </div>
+    </div>
+    @if (TempData["SuccessMsg"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMsg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-level="close"></button>
+        </div>
+    }
+
+    <h6 class="text-danger">
+        @TempData["ErrorMessage"]
+    </h6>
+    <table class="table table-striped">
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">Order ID</th>
+                <th scope="col">Order Number</th>
+                <th scope="col">Order Date</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Payment Mode</th>
+                <th scope="col">Total amount</th>
+                <th scope="col">Shipping Address</th>
+                <th scope="col">User Name</th>
+                <th class="m-2"></th>
+                <th class="m-2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DataRow dataRow in Model.Rows)
+            {
+                <tr>
+                    <th scope="row">@dataRow["OrderID"]</th>
+                    <td>@string.Format(new CultureInfo("hi-IN"), "{0:N0}", dataRow["OrderNumber"])</td>
+                    <td>@dataRow["OrderDate"].ToString().Substring(0,10)</td>
+                    <td>@dataRow["CustomerName"]</td>
+                    <td>@dataRow["PaymentMode"]</td>
+                    <td>@string.Format(new CultureInfo("hi-IN"), "{0:N0}", dataRow["TotalAmount"])</td>
+                    <td>@dataRow["ShippingAddress"]</td>
+                    <td>@dataRow["UserName"]</td>
+                    <td class="m-2"><a class="btn btn-warning" asp-action="OrderForm" asp-controller="Order" asp-route-OrderID="@dataRow["OrderID"]">Edit</a></td>
+                    <td class="m-2">
+                        <form method="post" asp-controller="Order" asp-action="OrderDelete">
+                            <input type="hidden" name="OrderID" value="@dataRow["OrderID"]" />
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                    onclick="setProductId('@dataRow["OrderID"]')">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirm Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this product?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form method="post" asp-controller="Order" asp-action="OrderDelete" id="deleteForm">
+                    <input type="hidden" name="OrderID" id="deleteProductId" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function setProductId(productId) {
+        document.getElementById('deleteProductId').value = productId;
+    }
+</script>
+
